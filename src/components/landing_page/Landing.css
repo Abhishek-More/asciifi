@@ -17,9 +17,10 @@ h1{
 
 .text {
   white-space: pre-wrap;
-  font-family: "Fira Code";
+  font-family: "Fira Code", monospace;
   font-size: 28px;
   padding-bottom: 40px;
+  color: #d8d8d8;
 }
 
 #leftbutton{
