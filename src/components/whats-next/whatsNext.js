@@ -1,3 +1,6 @@
+import 'bootstrap/dist/css/bootstrap.css';
+import './whatsNext.css'
+
 function WhatsNext() {
     return (
         <div class="container">
