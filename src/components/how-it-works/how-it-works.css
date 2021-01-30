@@ -4,11 +4,11 @@
     font-size: 100px;
     font-weight: bold;
 
-    padding-top: 45px;
+    margin-top: 45px;
 
     color: white;
     background-color: #0C0C0C;
-    
+
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
