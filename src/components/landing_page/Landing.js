@@ -14,7 +14,6 @@ function Landing() {
       <Link to='/video-call' className="text pink" id="rightbutton">{"Call a friend >"}</Link>
     </div>
   )
-
 }
 
 export default Landing;
