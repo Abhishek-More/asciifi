@@ -1,6 +1,5 @@
 import React from 'react'
 import HowItWorks from '../how-it-works/how-it-works'
-import WhatsNext from '../whats-next/whatsNext'
 import Landing from '../landing_page/Landing'
 
 export default function Home() {
@@ -8,7 +7,6 @@ export default function Home() {
         <div>
             <Landing />
             <HowItWorks />
-            <WhatsNext />
         </div>
     )
 }
