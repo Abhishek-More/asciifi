@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+nav {
+    height: 60px;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    width: 90%;
+    margin: auto;
+    padding: 0 2rem;
+    border-bottom: 1px solid #2c2c2c;
+}
+
+.logo {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    z-index: 1;
+}
+
+.logo:hover {
+    animation-name: white-gray;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+}
+
+.git-link {
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
+    color: #ffffff;
+    background: #f72585;
+    border-radius: 23.5px;
+    border-color: #f72585;
+    text-align: center;
+    padding: 1rem 2rem;
+
+}
+
+.git-link:hover {
+    animation-name: white-gray;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes pink-gray {
+    from {color: rgba(264, 37, 133, 100%)}
+    to {color: rgba(264, 37, 133, 60%)}
+}
+
+@keyframes white-gray {
+    from {color: rgba(255, 255, 255, 100%)}
+    to {color: rgba(255, 255, 255, 60%)}
+}
