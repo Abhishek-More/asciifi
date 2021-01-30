@@ -1,6 +1,6 @@
-body {
+div {
   text-align: center;
-  background-color: black;
+  margin-bottom: 100px;
 }
 
 header {
@@ -16,6 +16,12 @@ h1{
 }
 
 .text {
+  opacity: 0;
+  animation: fadeInAnimation ease 1s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
   white-space: pre-wrap;
   font-family: "Fira Code", monospace;
   font-size: 28px;
@@ -33,4 +39,13 @@ h1{
 
 .pink{
   color: #F72585;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
 }
