@@ -1,0 +1,15 @@
+.card {
+    margin: 50px;
+    
+    width: 33%;
+    padding-top: 33%;
+
+    text-align: center;
+    background-color: #979797;
+    border-radius: 20px;
+    
+    flex-grow: 1;
+}
+.card:hover {
+    background-color: #f1f1f1;
+}

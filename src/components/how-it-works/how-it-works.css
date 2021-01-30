@@ -1,0 +1,16 @@
+.title{
+    text-align: center;
+    font-family: "Montserrat";
+
+    font-size: 45px;
+    color: white;
+}
+.mainContainer{
+    padding: 15px;
+}
+.cardContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
