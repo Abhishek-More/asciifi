@@ -44,7 +44,7 @@
     let characters = "";
     var characterLine = "";
     for (var rows = 0; rows < img.rows; rows++) {
-      for (var cols = img.cols; cols > 0; cols--) {
+      for (var cols = img.cols - 1; cols > 0; cols--) {
         let pixel = data[rows * img.cols + cols];
         let newChar = chars[Math.floor(pixel / 25)];
         characterLine += newChar;
