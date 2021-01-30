@@ -14,6 +14,12 @@
 }
 .mainContainer{
     padding: 15px;
+
+    opacity: 0;
+    animation: fadeInAnimation ease 4s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 .cardContainer{
     display: flex;
@@ -23,4 +29,13 @@
 
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
 }
