@@ -1,8 +1,11 @@
 .title{
     text-align: center;
     font-family: "Montserrat";
-    padding-top: 180px;
-    font-size: 45px;
+    font-size: 100px;
+    font-weight: bold;
+
+    padding-top: 45px;
+
     color: white;
     background-color: #0C0C0C;
     
