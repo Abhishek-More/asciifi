@@ -1,13 +1,9 @@
 .title{
     text-align: center;
-    font-family: "Monseratt";
+    font-family: "Montserrat";
 
     font-size: 45px;
-}
-@font-face{
-    font-family: "Monseratt";
-    font-style: normal;
-    src: url('../../fonts/Montserrat/Montserrat-Medium.ttf') format('truetype');
+    color: white;
 }
 .mainContainer{
     padding: 15px;
