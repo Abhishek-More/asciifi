@@ -1,9 +1,16 @@
 .title{
     text-align: center;
     font-family: "Montserrat";
-    padding-top: 180px;
-    font-size: 45px;
+    font-size: 100px;
+    font-weight: bold;
+
+    padding-top: 45px;
+
     color: white;
+    background-color: #0C0C0C;
+    
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 .mainContainer{
     padding: 15px;
@@ -12,4 +19,8 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    background-color: #0C0C0C;
+
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
