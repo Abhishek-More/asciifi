@@ -1,0 +1,15 @@
+.card {
+    height: 500px;
+    margin: 50px;
+    
+    text-align: center;
+    background-color: #979797;
+    border-radius: 20px;
+    
+    flex-grow: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.card:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
