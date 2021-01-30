@@ -25,6 +25,12 @@ h1{
 }
 
 .text {
+  opacity: 0;
+  animation: fadeInAnimation ease 4s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
   white-space: pre-wrap;
   font-family: "Fira Code", monospace;
   font-size: 2.25vh;
@@ -42,4 +48,13 @@ h1{
 
 .pink{
   color: #F72585;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
 }
