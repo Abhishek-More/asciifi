@@ -1,5 +1,5 @@
 import './Landing.css';
-
+import { Link } from 'react-router-dom'
 function Landing() {
 
   const desc = "A fast P2P video-calling platform.\n No sign up required."
