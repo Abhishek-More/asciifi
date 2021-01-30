@@ -4,17 +4,26 @@ body {
 }
 
 header {
-  padding-top: 200px;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+h1{
   font-family: "Montserrat";
+  font-size: 100px;
   font-weight: bold;
-  font-size: 24px;
-  line-height: 150%;
+  line-height: 80%
 }
 
 .text {
   white-space: pre-wrap;
-  font-family: "Fira Code"
+  font-family: "Fira Code";
+  font-size: 28px;
+  padding-bottom: 40px;
+}
 
+#leftbutton{
+  padding-right: 100px;
 }
 
 .white {

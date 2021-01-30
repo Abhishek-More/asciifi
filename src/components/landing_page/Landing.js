@@ -10,9 +10,8 @@ function Landing() {
            <h1 className="pink">Low Latency</h1>
           </header>
           <p className="text white">{desc}</p>
-          <a className="text pink">"Asciify Yourself >"</a>
-          <a className="text pink">"Call a friend >"</a>
-
+          <a className="text pink" id="leftbutton">Asciify Yourself ></a>
+          <a className="text pink" id="rightbutton">Call a friend ></a>
         </body>
     )
 

@@ -1,7 +1,7 @@
 .title{
     text-align: center;
     font-family: "Montserrat";
-
+    padding-top: 180px;
     font-size: 45px;
     color: white;
 }
@@ -13,4 +13,3 @@
     flex-direction: row;
     justify-content: center;
 }
-
