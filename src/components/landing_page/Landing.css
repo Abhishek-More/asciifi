@@ -1,18 +1,27 @@
-div {
-  text-align: center;
-  margin-bottom: 100px;
+body {
+  background-color: black;
+  justify-content: center;
+  height: 90vh;
 }
 
 header {
-  padding-top: 80px;
-  padding-bottom: 50px;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
 }
 
 h1{
   font-family: "Montserrat";
-  font-size: 100px;
+  font-size: 9vh;
   font-weight: bold;
   line-height: 100%
+}
+
+.innerbox{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .text {
@@ -24,13 +33,13 @@ h1{
 
   white-space: pre-wrap;
   font-family: "Fira Code", monospace;
-  font-size: 28px;
-  margin-bottom: 100px;
+  font-size: 2.25vh;
+  margin-bottom: 2.25vh;
   color: #d8d8d8;
 }
 
 #leftbutton{
-  margin-right: 100px;
+  margin-right: 10vw;
 }
 
 .white {
