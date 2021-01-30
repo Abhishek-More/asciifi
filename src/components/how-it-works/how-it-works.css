@@ -1,7 +1,7 @@
 .title{
     text-align: center;
     font-family: "Montserrat";
-    font-size: 100px;
+    font-size: 9vh;
     font-weight: bold;
 
     margin-top: 45px;
@@ -14,7 +14,7 @@
 }
 .mainContainer{
     padding: 15px;
-
+    height: 90vh;
     opacity: 0;
     animation: fadeInAnimation ease 1s;
     animation-delay: 1s;
