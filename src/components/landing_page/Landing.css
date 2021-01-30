@@ -1,0 +1,26 @@
+body {
+  text-align: center;
+  background-color: black;
+}
+
+header {
+  padding-top: 200px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 150%;
+}
+
+.text {
+  white-space: pre-wrap;
+  font-family: "Fira Code"
+
+}
+
+.white {
+  color: white;
+}
+
+.pink{
+  color: #F72585;
+}
