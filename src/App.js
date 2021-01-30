@@ -1,6 +1,7 @@
 import './App.css';
 import Navbar from './components/nav-bar/Navbar';
 import Home from './components/home/Home'
+
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 function App() {
