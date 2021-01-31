@@ -5,6 +5,29 @@
   let width = 640;
   let src = new cv.Mat(height, width, cv.CV_8UC4);
   let cap = new cv.VideoCapture(video);
+  let inverted = false;
+  let color = "white";
+  let inv_button = document.getElementById("invert_button");
+  let w_button = document.getElementById("white_button");
+  let r_button = document.getElementById("red_button");
+  let g_button = document.getElementById("green_button");
+  let b_button = document.getElementById("blue_button");
+
+  inv_button.addEventListener('click', () => {
+    inverted = !inverted;
+    if(!inverted) {
+      chars = [".", ",", ":", ";", "+", "*", "?", "%", "S", "#", "@"];
+    } else {
+      chars = ["@", "#", "S", "%", "?", "*", "+", ";", ":", ",", "."]
+    }
+  });
+
+  w_button.addEventListener('click', () => {color="white"});
+  r_button.addEventListener('click', () => {color="red"});
+  g_button.addEventListener('click', () => {color="green"});
+  b_button.addEventListener('click', () => {color="blue"});
+
+
   function processVideo() {
     cap.read(src);
     let frame = resizeImg(src, 120);
@@ -16,11 +39,12 @@
 
   var chars = [];
 
-  if(1==1) {
+  if(!inverted) {
     chars = [".", ",", ":", ";", "+", "*", "?", "%", "S", "#", "@"];
   } else {
     chars = ["@", "#", "S", "%", "?", "*", "+", ";", ":", ",", "."]
   }
+
 
   function resizeImg(img, newWidth) {
     let newMat = new cv.Mat();
@@ -56,6 +80,7 @@
       characterLine = "";
     }
     display.innerHTML = characters;
+    display.style.color = color;
     return characters;
   }
 }
