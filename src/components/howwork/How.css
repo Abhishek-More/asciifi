@@ -45,11 +45,18 @@
 
 .image {
     background-color: #0C0C0C;
-    
+    display:flex;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    justify-content: space-between;
 }
 
 img {
+    
+    margin-top: 5rem;
     border-radius: 20px;
+    min-width: 20vw;
+    max-height: 20vw;
 }
 
 .controller {
@@ -57,7 +64,7 @@ img {
     left: 0;
     background-color: #242424;
     justify-content:space-between;
-    margin-top: 11rem;
+    margin-top: 5vw;
     border-radius: 20px;
     padding: 3rem;
 
@@ -71,4 +78,8 @@ img {
     font-family: "Cabin";
     font-size: 25px;
     font-weight: 500;
+}
+
+.spacer {
+    margin: 2500px
 }

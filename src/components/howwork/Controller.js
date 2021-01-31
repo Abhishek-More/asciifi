@@ -5,7 +5,7 @@ import { motion, useViewportScroll, useMotionValue, useTransform } from 'framer-
 
 export default function Controller() {
     const { scrollY } = useViewportScroll()
-    const trans = useTransform(scrollY, [1000,2000],[0, -300])
+    const trans = useTransform(scrollY, [1000,1400],[0, -50])
 
     return (
         <motion.div style={{ y: trans }} className="controller">

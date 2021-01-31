@@ -4,10 +4,18 @@ import "./Call.css";
 function Call() {
 
     useEffect(() => {
- 
+        let video = document.getElementById("vid");
         const script = document.createElement("script");
         script.src = "peersend.js";
         document.body.appendChild(script);
+        
+        return () => {
+            script.remove();
+            //const str = video.srcObject;
+            //str.getVideoTracks().forEach(function (track) {
+            //    track.stop();
+            //});
+        };
     });
 
     return (
@@ -21,7 +29,7 @@ function Call() {
             <button id="clicker">
                 Connect To Peer
             </button>
-            <video id="vid" width="640" height="480" autoPlay></video>
+           
         </div>
     );
 }
