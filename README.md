@@ -1,4 +1,4 @@
-#Tired of the laggy connections? 
+# Tired of the laggy connections? 
 
 Are you part of the **four billion** people who do not have access to high-speed internet connections? Do you wish there was a **low latency alternative** to Zoom and Microsoft Teams that does not require a high quality internet access?
 
