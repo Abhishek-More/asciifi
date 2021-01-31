@@ -7,8 +7,15 @@ video {
 
 }
 
+.io {
+    display: inline-block;
+}
+
 input {
     background-color: white;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    text-align: center;
 }
 
 #id-holder {
@@ -29,7 +36,10 @@ input {
     text-align: center;
     border-radius: 20px;
     border: 2px solid white;
+    border: 2px solid #0C0C0C;;
     padding: 2rem;
+    min-height: 25vw;
+    min-width: 25vw;
     text-align: center;
     font-family: monospace;
     font-size: 7px;
@@ -41,8 +51,10 @@ input {
     display: block;
     text-align: center;
     border-radius: 20px;
-    border: 2px solid white;
+    border: 2px solid #0C0C0C;;
     padding: 2rem;
+    min-height: 25vw;
+    min-width: 25vw;
     text-align: center;
     font-family: monospace;
     font-size: 7px;
