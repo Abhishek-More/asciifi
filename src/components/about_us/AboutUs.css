@@ -1,0 +1,102 @@
+.homepage_end{
+  opacity: 0;
+  animation: fadeInAnimation ease 1s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.names_box {
+  display: inline-block;
+  justify-content: center;
+
+  height: 16vh;
+  width: 90%;
+}
+
+.aboutus_heading{
+  font-family: "Montserrat";
+  font-size: 8vh;
+  font-weight: bold;
+  padding-bottom: 6vh;
+  padding-top: 6vh;
+  border-top: 1px solid #2c2c2c;
+}
+
+.names{
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  font-family: "Fira Code", monospace;
+  font-size: 3vh;
+  margin-bottom: 4vh;
+
+}
+
+.subscribe_box{
+  background-color: #F72585;
+  padding-bottom: 8vh;
+  padding-top: 8vh;
+}
+
+.newsletter_heading{
+  background-color: inherit;
+  font-family: "Montserrat";
+  font-size: 8vh;
+  font-weight: bold;
+  padding-bottom: 6vh;
+  padding-top: 6vh;
+}
+
+.newsletter_input{
+  background: #ffffff;
+  border-radius: 23.5px;
+  width: 80vh;
+  text-align: center;
+  padding: 1rem 2rem;
+  border: 0px none;
+  outline: none;
+
+
+  font-family: "Fira Code", monospace;
+  margin-bottom: 6vh;
+
+}
+
+.subscribe_button{
+
+  background: #4361EE;
+  border-radius: 23.5px;
+  width: 20vh;
+  outline: none;
+
+
+
+  text-align: center;
+  padding: 1rem 2rem;
+
+  font-family: "Montserrat", monospace;
+  font-size: 2.5vh;
+  font-weight: bold;
+  margin-bottom: 4vh;
+
+}
+
+.white {
+  color: white;
+}
+
+.pink{
+  color: #F72585;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}

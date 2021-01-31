@@ -10,12 +10,13 @@
 
     document.getElementById("clicker").addEventListener("click", (e) => {
         let remotePeerId = document.getElementById("id").value;
-        document.getElementById("id-holder").innerHTML = "Connecting";
+        document.getElementById("clicker").innerHTML = "Connecting";
         callPeer(remotePeerId);
     });
 
     peer.on("connection", (conn) => {
         conn.on("data", (data) => {
+            document.getElementById("id-holder").innerHTML = "Connected!";
             // Will print 'hi!'
             console.log(conn.open);
             remote.innerHTML = data.toString();
@@ -35,7 +36,6 @@
                 .catch(function (err) {
                     console.log("An error occurred! " + err);
                 });
-
             let height = 480;
             let width = 640;
             let src = new cv.Mat(height, width, cv.CV_8UC4);

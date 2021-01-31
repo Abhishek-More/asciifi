@@ -5,7 +5,6 @@ function Call() {
 
     useEffect(() => {
 
-
         const script = document.createElement("script");
         script.src = "peersend.js";
         document.body.appendChild(script);
@@ -22,7 +21,7 @@ function Call() {
             <div className='video-pair'>
                 <div />
                 <p id="disp"></p>
-                <p id='remote'>?</p>
+                <p id='remote'></p>
                 <div />
             </div>
             <div className='io'>

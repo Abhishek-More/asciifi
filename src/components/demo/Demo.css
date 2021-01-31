@@ -2,6 +2,26 @@ video {
     display: none;
 }
 
+.button_row{
+  display: flex;
+  justify-content: center;
+}
+
+.button{
+  margin-top: 2.5vh;
+  margin-left: 1vh;
+  margin-right: 1vh;
+  color: white;
+  border-radius: 10px;
+  padding: 0.5rem;
+  font-family: "Fira Code";
+}
+
+#invert_button{
+  margin-left: 2.5vh;
+  margin-right: 2.5vh;
+}
+
 #disp {
     white-space: pre-wrap;
     display: block;
@@ -16,9 +36,9 @@ video {
 }
 
 .video-container {
-    
+
     display: flex;
     justify-content: center;
-    margin-top: 2vw;
+    margin-top: 2.5vh;
 
 }
