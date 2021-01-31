@@ -1,0 +1,49 @@
+* {
+    white-space: pre-line;
+}
+
+video {
+    display: none;
+}
+
+input {
+    background-color: white;
+}
+
+#id-holder {
+    color: white;
+    margin: 5rem;
+}
+
+.video-pair {
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem;
+}
+
+
+#remote {
+    white-space: pre-wrap;
+    display: block;
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid white;
+    padding: 2rem;
+    text-align: center;
+    font-family: monospace;
+    font-size: 7px;
+    color: white
+}
+
+#disp {
+    white-space: pre-wrap;
+    display: block;
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid white;
+    padding: 2rem;
+    text-align: center;
+    font-family: monospace;
+    font-size: 7px;
+    color: white
+}
