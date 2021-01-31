@@ -22,7 +22,7 @@
   .timeline {
     position: relative;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 40px auto;
     opacity: 0;
     animation: fadeInAnimation ease 1s;
     animation-delay: 1s;
@@ -109,7 +109,7 @@
 
   /* The actual content */
   .content {
-    padding: 20px 30px;
+    padding: 10px 10px;
     background-color: white;
     position: relative;
     border-radius: 6px;
