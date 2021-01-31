@@ -10,6 +10,7 @@
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     background-color:#0C0C0C;
+    margin-bottom: 200px;
 }
 
 .HowText {
@@ -18,7 +19,7 @@
     font-size: 9vh;
     font-weight: bold;
 
-    margin-top: 45px;
+    margin-top: 30px;
 
     color: white;
     background-color: #0C0C0C;
@@ -29,20 +30,45 @@
 }
 
 .how-content {
-    display: flex;
-    background-color: #0C0C0C;
+    background-color: transparent;
     align-items: center;
     padding: 3rem;
+    height: 70vh;
 }
 
-.cards {
-    flex: 1;
-    background-color: #0C0C0C;
-    padding: 4rem;
+.ctrl {
+    background-color: transparent;
+    padding: 5rem;
+    width: 60%;
+    margin: auto;
 }
 
 .image {
-    flex: 1;
     background-color: #0C0C0C;
+    
 }
 
+img {
+    border-radius: 20px;
+}
+
+.controller {
+    display: flex;
+    left: 0;
+    background-color: #242424;
+    justify-content:space-between;
+    margin-top: 11rem;
+    border-radius: 20px;
+    padding: 3rem;
+
+}
+
+.how-text {
+    background-color: #242424;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    font-family: "Cabin";
+    font-size: 25px;
+    font-weight: 500;
+}

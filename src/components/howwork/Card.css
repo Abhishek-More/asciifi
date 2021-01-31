@@ -1,13 +1,12 @@
 .card-container {
     background-color: white;
-    padding: 2rem;
     width: 20%;
     border-radius: 10px;
     padding: 4rem;
 }
 
 .desc {
+    padding: 2rem;
     background-color: white;
     color: black;
-
 }
