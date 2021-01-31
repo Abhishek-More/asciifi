@@ -1,15 +1,22 @@
-import React from 'react'
+import {React, useEffect} from 'react'
 import './How.css'
 import Controller from './Controller'
 import { motion, useViewportScroll, useMotionValue, useTransform } from 'framer-motion'
 
 export default function How() {
 
+    var size = window.innerHeight;
+    useEffect(() => {
+        const { innerHeight: height } = window;
+        const size = window.innerHeight
+        console.log(window.innerHeight)
+    })
+
     const { scrollY } = useViewportScroll()
-    const trans = useTransform(scrollY, [1000, 3500],[0, 2500])
-    const op1 = useTransform(scrollY, [0, 1666], [0, 1])
-    const op2= useTransform(scrollY, [1666, 2332],[0, 1])
-    const op3 = useTransform(scrollY, [2498, 3000],[0, 1])
+    const trans = useTransform(scrollY, [size, 4000],[0, 4000-size])
+    const op1 = useTransform(scrollY, [0, size + 666], [0, 1])
+    const op2= useTransform(scrollY, [size + 666, size + 666 * 2],[0, 1])
+    const op3 = useTransform(scrollY, [size + 666 * 2, size + 666 * 3],[0, 1])
     return (
         <motion.div style={{y: trans}} className="main">
             <h1 className='HowText'>How it works</h1>
