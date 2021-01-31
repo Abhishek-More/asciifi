@@ -4,6 +4,7 @@
 
 video {
     display: none;
+
 }
 
 input {
@@ -46,4 +47,15 @@ input {
     font-family: monospace;
     font-size: 7px;
     color: white
+}
+
+#clicker {
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: white;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    
 }

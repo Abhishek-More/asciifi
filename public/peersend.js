@@ -1,12 +1,11 @@
-var peer = new Peer();
-
-window.addEventListener("load", (event) => {
+{
+    console.log("HI")
     let display = document.getElementById("disp");
     let remote = document.getElementById("remote");
-    var peer = new Peer();
+    var peer = new Peer(getWords());
 
     peer.on("open", function (id) {
-        document.getElementById("id-holder").innerHTML = id;
+        document.getElementById("id-holder").innerHTML = "Your ID: " + id;
     });
 
     document.getElementById("clicker").addEventListener("click", (e) => {
@@ -45,7 +44,7 @@ window.addEventListener("load", (event) => {
             function processVideo() {
                 let begin = Date.now();
                 cap.read(src);
-                let frame = resizeImg(src, 50);
+                let frame = resizeImg(src, 100);
                 frame = grayify(frame);
                 let characters = asciify(frame);
                 conn.send(characters);
@@ -110,4 +109,4 @@ window.addEventListener("load", (event) => {
             }
         });
     }
-});
+}

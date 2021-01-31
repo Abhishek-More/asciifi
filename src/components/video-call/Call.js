@@ -4,11 +4,10 @@ import "./Call.css";
 function Call() {
 
     useEffect(() => {
-        let video = document.getElementById("vid");
         const script = document.createElement("script");
         script.src = "peersend.js";
         document.body.appendChild(script);
-        
+
         return () => {
             script.remove();
             //const str = video.srcObject;
@@ -20,16 +19,18 @@ function Call() {
 
     return (
         <div>
-            <input id='id'></input>
-            <p id="id-holder">Your ID</p>
             <div className='video-pair'>
+                <div />
                 <p id="disp">Self</p>
                 <p id='remote'>Remote</p>
-            </div>
-            <button id="clicker">
+                <div /></div>
+            <input id='id'></input>
+            <p id="id-holder">Your ID: Loading</p>
+
+            <a id="clicker">
                 Connect To Peer
-            </button>
-           
+            </a>
+
         </div>
     );
 }

@@ -45,9 +45,7 @@ h1{
 }
 
 #leftbutton:hover, #rightbutton:hover{
-  animation-name: pink-gray;
-  animation-duration: 0.25s;
-  animation-fill-mode: forwards;
+  opacity: 0.5;
 }
 
 .white {
