@@ -5,7 +5,7 @@ import { motion, useViewportScroll, useMotionValue, useTransform } from 'framer-
 
 export default function How() {
 
-    var size = window.innerHeight;
+    var size = window.innerHeight - 75;
 
     const { scrollY } = useViewportScroll()
     const trans = useTransform(scrollY, [size, 3500],[0, 3500-size])
