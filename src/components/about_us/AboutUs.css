@@ -1,14 +1,17 @@
+.homepage_end{
+  opacity: 0;
+  animation: fadeInAnimation ease 1s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
 .names_box {
   display: inline-block;
   justify-content: center;
 
   height: 16vh;
   width: 90%;
-  opacity: 0;
-  animation: fadeInAnimation ease 1s;
-  animation-delay: 1s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
 }
 
 .aboutus_heading{
