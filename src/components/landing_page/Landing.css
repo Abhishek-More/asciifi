@@ -44,6 +44,12 @@ h1{
   margin-right: 10vw;
 }
 
+#leftbutton:hover, #rightbutton:hover{
+  animation-name: pink-gray;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+}
+
 .white {
   color: white;
 }
@@ -59,4 +65,8 @@ h1{
     100% {
         opacity: 1;
      }
+}
+@keyframes pink-gray {
+  from {color: rgba(264, 37, 133, 100%)}
+  to {color: rgba(264, 37, 133, 60%)}
 }

@@ -7,10 +7,7 @@ import { motion, useViewportScroll, useMotionValue, useTransform } from 'framer-
 export default function Controller() {
 
     let size = 1000;
-    useEffect(() => {
-        const { innerWidth: width, innerHeight: height } = window;
-        size = height
-    })
+
     const { scrollY } = useViewportScroll()
     const trans = useTransform(scrollY, [size,1400],[0, -50])
     const op1 = useTransform(scrollY, [0, size + 666], [0.2, 1])

@@ -6,14 +6,9 @@ import { motion, useViewportScroll, useMotionValue, useTransform } from 'framer-
 export default function How() {
 
     var size = window.innerHeight;
-    useEffect(() => {
-        const { innerHeight: height } = window;
-        const size = window.innerHeight
-        console.log(window.innerHeight)
-    })
 
     const { scrollY } = useViewportScroll()
-    const trans = useTransform(scrollY, [size, 4000],[0, 4000-size])
+    const trans = useTransform(scrollY, [size, 3500],[0, 3500-size])
     const op1 = useTransform(scrollY, [0, size + 666], [0, 1])
     const op2= useTransform(scrollY, [size + 666, size + 666 * 2],[0, 1])
     const op3 = useTransform(scrollY, [size + 666 * 2, size + 666 * 3],[0, 1])
