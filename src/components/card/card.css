@@ -1,15 +1,15 @@
 .card {
-    margin: 4%;
+    height: 12vh;
+    width: 100%;
     
-    width: 33%;
-    padding-top: 33%;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
 
     text-align: center;
+    justify-content: center;
+
     background-color: #979797;
     border-radius: 20px;
     
     flex-grow: 1;
-}
-.card:hover {
-    background-color: #f1f1f1;
 }

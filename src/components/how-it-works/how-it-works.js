@@ -9,11 +9,17 @@ const HowItWorks = () => (
     <div className="title">
       How it Works
     </div>
-    <div className="cardContainer">
-      <Card/>
-      <Card/>
-      <Card/>
+    <div className="smallContainer">
+      <div className="cardContainer">
+        <Card message="Video Call"/>
+        <Card message="Greyscale"/>
+        <Card message="Asciffi!"/>
+      </div>
+      <div className="pictureContainer">
+        Picture
+      </div>
     </div>
+    
   </div>
   
 )
