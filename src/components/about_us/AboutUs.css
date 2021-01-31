@@ -38,6 +38,7 @@
 .subscribe_box{
   background-color: #F72585;
   padding-bottom: 8vh;
+  min-height: 600px;
   padding-top: 8vh;
 }
 
@@ -52,41 +53,43 @@
 
 .newsletter_input{
   background: #ffffff;
-  border-radius: 23.5px;
-  width: 80vh;
+  border-radius: 30px;
+  width: 50vh;
   text-align: center;
   padding: 1rem 2rem;
   border: 0px none;
   outline: none;
+  font-size: 18px;
 
-
-  font-family: "Fira Code", monospace;
+  font-family: "Montserrat";
   margin-bottom: 6vh;
 
 }
 
 .subscribe_button{
 
-  background: #4361EE;
-  border-radius: 23.5px;
-  width: 20vh;
+  border-radius: 30px;
+  background-color: white;;
   outline: none;
-
-
-
+  color: black;
   text-align: center;
   padding: 1rem 2rem;
-
   font-family: "Montserrat", monospace;
-  font-size: 2.5vh;
-  font-weight: bold;
+  font-size: 1.5vh;
+  font-weight: 500;
   margin-bottom: 4vh;
 
 }
 
-.white {
-  color: white;
+
+.subscribe_button:hover {
+  cursor:grabbing;
 }
+
+.subscribe_button:active {
+  opacity: 80%;
+}
+
 
 .pink{
   color: #F72585;

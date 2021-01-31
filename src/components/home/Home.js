@@ -5,6 +5,7 @@ import Landing from '../landing_page/Landing'
 import WhatsNext from '../whats-next/WhatsNext'
 import How from '../howwork/How'
 import AboutUs from '../about_us/AboutUs'
+import Description from '../description/Description'
 
 
 export default function Home() {
@@ -13,7 +14,7 @@ export default function Home() {
             <Landing />
             <How />
             <div className="spacer" />
-            <WhatsNext />
+            <Description />
             <AboutUs />
         </div>
     )
