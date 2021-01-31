@@ -3,12 +3,9 @@ import '../howwork/How.css'
 import HowItWorks from '../how-it-works/how-it-works'
 import Landing from '../landing_page/Landing'
 import WhatsNext from '../whats-next/WhatsNext'
-<<<<<<< HEAD
 import How from '../howwork/How'
-=======
 import AboutUs from '../about_us/AboutUs'
 
->>>>>>> origin/nt
 
 export default function Home() {
     return (
