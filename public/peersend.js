@@ -1,8 +1,14 @@
 {
     console.log("HI")
     let display = document.getElementById("disp");
+    let video = document.getElementById("vid"); // video is the id of video tag
     let remote = document.getElementById("remote");
     var peer = new Peer(getWords());
+    let height = 480;
+    let width = 640;
+    let src = new cv.Mat(height, width, cv.CV_8UC4);
+    let cap = new cv.VideoCapture(video);
+    const FPS = 30;
 
     peer.on("open", function (id) {
         document.getElementById("id-holder").innerHTML = "Your ID: " + id;
@@ -26,7 +32,6 @@
     function callPeer(id) {
         const conn = peer.connect(id);
         conn.on("open", () => {
-            let video = document.getElementById("vid"); // video is the id of video tag
             navigator.mediaDevices
                 .getUserMedia({ video: true, audio: false })
                 .then(function (stream) {
@@ -36,11 +41,6 @@
                 .catch(function (err) {
                     console.log("An error occurred! " + err);
                 });
-            let height = 480;
-            let width = 640;
-            let src = new cv.Mat(height, width, cv.CV_8UC4);
-            let cap = new cv.VideoCapture(video);
-            const FPS = 30;
             function processVideo() {
                 let begin = Date.now();
                 cap.read(src);
